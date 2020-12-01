@@ -5,10 +5,8 @@
   "scripts": {
     "start": "node server/server.js",
     "serve": "live-server public/",
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "npm run build:prod"
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
   },
   "engines": {
     "node": "12.x"
