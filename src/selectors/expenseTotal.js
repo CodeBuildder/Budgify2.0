@@ -1,5 +1,3 @@
-import getVisibleExpenses from "./expenses"
-
 export default (expenses) => {
     return expenses
         .map((expense) => expense.amount)

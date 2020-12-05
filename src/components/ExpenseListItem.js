@@ -5,7 +5,7 @@ import numeral from 'numeral'
 
 numeral.register('locale', 'inr', {
     delimiters: {
-        thousands: ' ',
+        thousands: ',',
         decimal: '.'
     },
     abbreviations: {
