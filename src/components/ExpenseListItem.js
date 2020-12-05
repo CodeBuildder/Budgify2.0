@@ -6,7 +6,7 @@ import numeral from 'numeral'
 numeral.register('locale', 'inr', {
     delimiters: {
         thousands: ' ',
-        decimal: ','
+        decimal: '.'
     },
     abbreviations: {
         thousand: 'k',
@@ -32,7 +32,7 @@ const ExpenseListItem = ({ id, description, type, amount, createdAt }) => (
             {numeral(amount).format('$0,0.00')} 
 
             -
-            
+
             {moment(createdAt).format('ddd, Do MMM YYYY') }
         </p>
     </div>
