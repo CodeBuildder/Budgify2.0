@@ -6,7 +6,7 @@ import { startSetExpense } from './actions/expenses'
 import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import './firebase/firebase'
+import { firebase } from './firebase/firebase'
 
 const store = configureStore();
 
@@ -23,4 +23,10 @@ store.dispatch(startSetExpense()).then(() => {
   ReactDOM.render(jsx, document.getElementById('app'))
 })
 
-
+firebase.auth().onAuthStateChanged((user) => {
+  if(user){
+    console.log('logged in')
+  }else{
+    console.log('log out')
+  }
+})
