@@ -4,9 +4,12 @@ import { startLogin } from '../actions/auth'
 
 export const LoginPage = ({startLogin}) => (
     <div className="boxLayout">
-        <image src="/images/bgr.jpg">
-        <button onClick={startLogin}>Login</button>
-        </image>
+        <div className="boxLayout-box">
+        <h1>Budgify App</h1>
+        <p>Time to get our expenses under control. Use Budgify!</p>
+        <h2>Sign Up with</h2>
+            <button onClick={startLogin}>Login</button>
+        </div>   
     </div>
 )
 
