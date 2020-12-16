@@ -21,12 +21,11 @@ numeral.register('locale', 'inr', {
 numeral.locale('inr');
 
 
-const ExpenseListItem = ({ id, description, type, amount, createdAt }) => (
+const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     <div>
         <Link to={`/edit/${id}`}>
     <h3>{description}</h3>
     </Link>
-        <p>{type}</p>
         <p>
             
             {numeral(amount).format('$0,0.00')} 
