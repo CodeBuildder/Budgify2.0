@@ -1,10 +1,11 @@
 .boxLayout {
     background: url('/images/bgr.png');
-    background-size: cover;
-    height:100vh;
-    width: 100vw;
+    // background-size: cover;
+    // height:100vh;
+    // width: 100vw;
 }
 
-// .boxLayout-box{
-//     background: fade-out($color: white, $amount: 0.15);
-// }
+.boxLayout-box{
+   //background: fade-out($color: white, $amount: 0.15);
+   color: floralwhite;
+}
