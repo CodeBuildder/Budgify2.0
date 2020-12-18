@@ -1,11 +1,52 @@
 .boxLayout {
-    background: url('/images/bgr.png');
-    // background-size: cover;
-    // height:100vh;
-    // width: 100vw;
+    background: url('/images/bgr.jpg');
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
 }
 
 .boxLayout-box{
-   //background: fade-out($color: white, $amount: 0.15);
-   color: floralwhite;
+    background: fade-out(black, .6);
+    border-radius: 23px;
+    padding: $l-size $m-size;
+    text-align: center;
+    margin: 50px 0;
+    width: 25rem;
+    color: floralwhite;
+}
+
+footer{
+    color: #fff;
+    margin-top: auto;
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.copyright{
+    font-size:15px;
+    margin-bottom: 20px;
+    align-self: center;
+    
+}
+.copyright a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#48dbfb;
+    font-weight: 500;
+}
+.sm a{
+    align-items: ce;
+    color: white;
+    margin: 0 10px 50px 0 ;
+    transition:  .2s linear;
+    text-decoration: none;
+}
+.sm a:hover{
+    color: #48dbfb;
 }
