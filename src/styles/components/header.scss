@@ -1,0 +1,25 @@
+.header{
+    background: $dark-blue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.headerTitle{
+    color: blanchedalmond;
+    text-decoration: none;
+    h1{
+        margin: 0;
+    }
+}
+
+.navContent{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size 0px;
+}
+
+#logo{
+    color: blanchedalmond;
+    font-size: 30px;
+}

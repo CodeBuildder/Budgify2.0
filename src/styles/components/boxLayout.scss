@@ -24,34 +24,4 @@
     line-height: 1;
 }
 
-footer{
-    color: #fff;
-    margin-top: auto;
-    align-items: baseline;
-    display: flex;
-    justify-content: center;
-    
-}
 
-.copyright{
-    font-size:15px;
-    margin-bottom: 20px;
-    align-self: center;
-    
-}
-.copyright a{
-    text-decoration: none;
-    font-size: 16px;
-    color:#48dbfb;
-    font-weight: 500;
-}
-.sm a{
-    align-items: ce;
-    color: white;
-    margin: 0 10px 50px 0 ;
-    transition:  .2s linear;
-    text-decoration: none;
-}
-.sm a:hover{
-    color: #48dbfb;
-}

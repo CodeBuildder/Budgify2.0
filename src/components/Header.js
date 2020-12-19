@@ -4,13 +4,16 @@ import { connect } from 'react-redux'
 import { startLogout } from '../actions/auth'
 
 export const Header = ({ startLogout }) => (
-  <header>
-    
-    <Link to="/dashboard">
-    <i class="fas fa-shopping-cart"></i>
-      <h1>Expensify</h1>
-    </Link>
-    <button onClick = {startLogout} >LogOut</button>
+  <header className="header">
+    <div className="contentContainer">
+    <div className="navContent">
+        <i id="logo" class="fas fa-shopping-cart"></i>
+        <Link className="headerTitle" to="/dashboard">
+          <h1>Budgify</h1>
+        </Link>
+        <button onClick = {startLogout} >LogOut</button>
+      </div>
+    </div>
   </header>
 );
 
