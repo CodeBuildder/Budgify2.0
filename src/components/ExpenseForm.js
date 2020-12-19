@@ -61,11 +61,11 @@ export default class ExpenseForm extends React.Component {
     }
     render() {
         return(
-            <div>
-            {this.state.error && <p>{this.state.error}</p>}
-                <form onSubmit={this.onSubmit}>
+                <form className="expenseForm" onSubmit={this.onSubmit}>
+                    {this.state.error && <p className="formError">{this.state.error}</p>}
                     <input
                         type="text"
+                        className="textInput"
                         placeholder="Desciption"
                         autoFocus
                         value={this.state.description}
@@ -73,6 +73,7 @@ export default class ExpenseForm extends React.Component {
                     />
                     <input 
                         type="text"
+                        className="textInput"
                         placeholder="Enter the Amount"
                         value={this.state.amount}
                         onChange={this.onAmountChange}
@@ -86,23 +87,17 @@ export default class ExpenseForm extends React.Component {
                         isOutsideRange={() => false}
                         displayFormat={() => "DD/MM/YYYY"}
                     />
-                    <select>
-                        <option>
-                        Card
-                        </option>
-                        <option>
-                        Cash
-                        </option>
-                    </select>
                     <textarea
+                        className="textInput"
                         placeholder="Add note for reference."
                         value={this.state.note}
                         onChange={this.onNoteChange}
                     >
                     </textarea>
-                    <button>Add Expense </button>
+                    <div>
+                        <button id="addExpenseButton" className="fas fa-plus"> </button>
+                    </div>   
                 </form>
-            </div>
         )
     }
 }

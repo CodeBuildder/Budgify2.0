@@ -1,0 +1,43 @@
+.expenseForm{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    padding: 10px;
+    margin-bottom: $m-size;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 2px solid blanchedalmond;
+    background: $dark-blue;
+    >* {
+        margin-bottom: $xl-size;
+    }
+}
+
+#addExpenseButton{
+    background: blanchedalmond;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    margin-left: 50px;
+}
+
+#addExpenseButton:hover{
+    transform: scale(1.2);
+}
+.formError{
+    margin: $m-size 0 $m-size $xl-size;
+    font-style: italic;
+    color: red;
+}
+
+// .formError[data-error] .textInput{
+//     border: red;
+// }
