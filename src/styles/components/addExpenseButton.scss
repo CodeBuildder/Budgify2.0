@@ -1,0 +1,18 @@
+#addExpenseButton{
+    background: darkblue;
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#addExpenseButton:hover{
+
+    background: fade-in(#fff, 0);
+    color: black;
+    transform: scale(1.2);
+
+}

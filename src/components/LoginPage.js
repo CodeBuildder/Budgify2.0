@@ -8,7 +8,7 @@ export const LoginPage = ({startLogin}) => (
         <div className="boxLayout-box">
         <h1 className="boxLayout-title">Budgify App</h1>
         <p>Time to get our expenses under control. Use Budgify!</p>
-            <button id="loginButton" class="fab fa-google" onClick={startLogin}>              Sign in</button>
+            <button id="loginButton" class="fab fa-google" onClick={startLogin}>        Sign in</button>
         </div>
         <footer>
             <div class="inner-width">
