@@ -1,0 +1,19 @@
+
+#loginButton{
+    background: fade-out(black, .6);
+    border-radius: 23px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: $fontSize-large;
+    padding: $m-size $s-size;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+#loginButton:hover{
+
+    background: fade-in(#fff, 0);
+    color: black;
+    transform: scale(1.2);
+
+}
