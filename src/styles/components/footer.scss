@@ -1,9 +1,8 @@
 footer{
     color: #fff;
-    margin-top: auto;
-    align-items: baseline;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
@@ -20,9 +19,10 @@ footer{
     font-weight: 500;
 }
 .sm a{
-    align-items: ce;
+    
     color: white;
-    margin: 0 auto 50px 0 ;
+    justify-content: space-between;
+    margin: 0 40px 50px 0 ;
     transition:  .2s linear;
     text-decoration: none;
 }
