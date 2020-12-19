@@ -1,12 +1,27 @@
 .inputGroup{
     display: flex;
-    margin-bottom: $l-size;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-top: 10px;
+    margin-bottom: $m-size;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    border-top: blanchedalmond;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 2px solid blanchedalmond;
     background: $dark-blue;
+
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        margin-bottom: $l-size;
+    }
 }
 
 .inputGroup__item{
+    margin-bottom: $s-size;
     margin-right: $s-size;
+
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0 $s-size 0 0;
+    }
 }

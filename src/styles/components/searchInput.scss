@@ -1,0 +1,22 @@
+.textInput{
+    background: transparent;
+    margin: $s-size $l-size;
+    color: white;
+    border: none;
+    border-bottom: 2px solid blanchedalmond;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 35px;
+    font-size: $fontSize-large;
+    font-weight: 300;
+    padding: $s-size;
+}
+
+.select{
+    background: transparent;
+    background-color: $dark-blue;
+    border:none;
+    margin: $s-size $l-size;
+    height: 35px;
+    color: white;
+}
