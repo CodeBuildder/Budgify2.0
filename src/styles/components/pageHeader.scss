@@ -2,10 +2,17 @@
     background: #EEEEEE;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
     border-top: darkblue solid 2px;
+    border-bottom: $dark-blue solid 2px;
     color: $dark-blue;
-    margin-bottom: $l-size;
+    //margin-bottom: $l-size;
     padding: $l-size 0;
+}
+
+.pageHeader-actions{
+    margin-top: $m-size;
 }
 
 .pageHeader-title{

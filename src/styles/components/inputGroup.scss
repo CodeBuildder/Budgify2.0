@@ -1,0 +1,12 @@
+.inputGroup{
+    display: flex;
+    margin-bottom: $l-size;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: blanchedalmond;
+    background: $dark-blue;
+}
+
+.inputGroup__item{
+    margin-right: $s-size;
+}

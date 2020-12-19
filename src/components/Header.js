@@ -11,7 +11,7 @@ export const Header = ({ startLogout }) => (
         <Link className="headerTitle" to="/dashboard">
           <h1>Budgify</h1>
         </Link>
-        <button onClick = {startLogout} >LogOut</button>
+        <button id="logoutButton" className="fas fa-sign-out-alt" onClick = {startLogout} ></button>
       </div>
     </div>
   </header>

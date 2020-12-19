@@ -1,4 +1,3 @@
-
 #loginButton{
     background: fade-out(black, .6);
     border-radius: 23px;
@@ -16,4 +15,18 @@
     color: black;
     transform: scale(1.2);
 
+}
+
+#logoutButton{
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 30px ;
+    transition: .4sec linear;
+}
+
+#logoutButton:hover{
+    color: rgb(231, 216, 216);
+    transform: scale(1.1);
 }
