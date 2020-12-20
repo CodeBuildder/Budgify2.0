@@ -13,7 +13,7 @@ export const LoginPage = ({startLogin}) => (
         <footer>
             <div class="inner-width">
                 <div class="copyright">
-                    &copy; 2020 | Created and Developed By <a href="#">CodeBuilder</a>
+                    &copy; 2020 | Created and Developed By <a href="http://skaushik-kums.000webhostapp.com/">CodeBuilder</a>
                 </div>
                 <div class="sm">
                         <a href="#" class="fab fa-facebook-f"></a>
