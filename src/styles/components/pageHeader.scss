@@ -1,4 +1,6 @@
 .pageHeader{
+    display: flex;
+    flex-direction: column;
     background: #EEEEEE;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
@@ -7,7 +9,7 @@
     border-top: $dark-blue solid 2px;
     border-bottom: $dark-blue solid 2px;
     color: $dark-blue;
-    //margin-bottom: $l-size;
+    justify-content: space-between;
     padding: $l-size 0;
 }
 
@@ -22,6 +24,8 @@
         font-weight: bold;
     }
     .headerContent{
-        margin-left: 750px;
+        @media(min-width: $desktop-breakpoint) {
+            flex-direction: row;
+        }
     }
 }

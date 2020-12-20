@@ -12,10 +12,12 @@ const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
         <div className="pageHeader">
             <div className="contentContainer">
                 <h1 className="pageHeader-title"><span className="boldContent">{expenseCount}</span> {expenseWord} 
-                    <span className="headerContent"> Today's Total: 
-                        <span className="boldContent"> {formattedExpensesTotal}
+                    <div className="headerContent"> 
+                        Total:  
+                        <span className="boldContent"> 
+                            {formattedExpensesTotal}
                         </span>
-                    </span> 
+                    </div> 
                 </h1>
                 <div className="pageHeader-actions">
                     <Link className="fas fa-cart-plus" id="addExpenseButton" to="/create"></Link>
