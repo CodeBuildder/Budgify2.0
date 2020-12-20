@@ -1,0 +1,75 @@
+.listHeader{
+    background: #EEEEEE;
+    border-top: 2px solid darken($dark-blue, 10%) ;
+    border-bottom: 2px solid darken($dark-blue, 10%) ;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    color: $dark-blue;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+
+
+}
+
+.listItem{
+    border-top: 1px solid blanchedalmond;
+    background: $dark-blue;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: $l-size;
+    transition: .3s ease-in;
+    &:hover{
+        background: #51607A;
+    }
+    @media (min-width: $desktop-breakpoint) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $m-size;
+    }
+}
+
+.listBody {
+    margin-bottom: $m-size;
+    
+    @media (min-width: $desktop-breakpoint) {
+      margin-bottom: $l-size;
+    }
+  }
+.listItem-message {
+    align-items: center;
+    color:$off-white ;
+    justify-content: center;
+    padding: $m-size;
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+  
+  .listItem-title {
+    margin: 0;
+    word-break: break-all;
+  }
+  
+  .listItem-sub-title {
+    color:  $off-white;
+    font-size: $font-size-small;
+  }
+  
+  .listItem-data {
+    margin: $s-size 0 0 0;
+    
+    @media (min-width: $desktop-breakpoint) {
+      margin: 0;
+      padding-left: $s-size;
+    }
+  }

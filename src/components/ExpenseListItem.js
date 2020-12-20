@@ -22,21 +22,13 @@ numeral.locale('inr');
 
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => (
-    <div>
-        <Link to={`/edit/${id}`}>
-    <h3>{description}</h3>
+    <Link className="listItem" to={`/edit/${id}`}>
+        <div>
+            <h3 className="lisItem-title">{description}</h3>
+                <span className="listItem-sub-title">{moment(createdAt).format('ddd, Do MMM YYYY')}</span>
+        </div>
+        <h3 className="listItem-data">{numeral(amount).format('$0,0.00')}</h3>
     </Link>
-        <p>
-            
-            {numeral(amount).format('$0,0.00')} 
-
-            -
-
-            {moment(createdAt).format('ddd, Do MMM YYYY') }
-        </p>
-    </div>
 )
-
-
 
 export default ExpenseListItem
